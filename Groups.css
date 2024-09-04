@@ -1,0 +1,121 @@
+body {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}/* Style the product box */
+
+
+.product-box {
+  border: 1px solid #ddddddb0;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f962;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style the product title */
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the product details */
+.product-details {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the ingredients list */
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredients-list li {
+  margin-bottom: 10px;
+}
+
+
+
+/* Ensure the image doesn't exceed the slide dimensions */
+.carousel-item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
+/* Modal styling */
+.modal-body .product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.modal-body .product-benefits {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.modal-body .ingredients-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Change the color of the carousel control buttons to black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  background-size: 100%, 100%;
+}
+
+/* Optionally, you can adjust the size of the buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #f8f9fa00; /* Light gray background */
+  color: #343a40; /* Dark gray text */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #343a40; /* Dark gray link color */
+}
+
+.footer a:hover {
+  color: #ff1100; /* Blue color on hover */
+}
+
+.footer .text-center {
+  padding: 10px 0;
+  background-color: #343a40; /* Dark background for bottom part */
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 14px;
+}
+  

@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    
+}
+.description-box {
+    position: relative;
+    background-color: #ffffff; /* Set the background color to white */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px  rgba(15, 2, 2, 0.925); /* Optional: Add a subtle shadow for depth */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed;
+}
+
+.background-image {
+    position: relative;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 247, 247, 0); 
+    z-index: 1; 
+}
+
+.background-image .content {
+    position: relative;
+    z-index: 2; 
+    color: rgba(255, 255, 255, 0); 
+
+
+}
+
+.description-box {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.developer-section .card {
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+    border-radius: 90% 10% 90% 10% / 10% 91% 9% 90% 
+}
+
+.proposal-section .card {
+    box-shadow: 0px 4px 8px rgb(2, 2, 2);
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    background-color: #ffffffbb; /* Set the background color to white */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed;
+    flex: 1; /* Allows the cards to take equal space */
+    max-width: 100%; 
+}
+
+
+.box {
+    position: relative;
+    background-color: #ffffffbb; /* Set the background color to white */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+    background-size: cover; /* Ensures the background image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the background image */
+    background-attachment: fixed;
+}
+
+
+
+@media (max-width: 600px) {
+    .card {
+        max-width: 70%; /* Reduce the width for smaller screens */
+        margin: 25%; /* Add some margin for spacing */
+        padding: 0px; /* Add padding inside the box */
+       /* font-size: 9px; /* Optional: Reduce font size */
+
+    .card-title {
+    margin:  0%; /* Add space above and below the title */
+    font-size: 15px; /* Adjust the title size */
+}
+
+    .card-text {
+    margin: 0%; /* Add space above and below the text */
+    font-size: 10px; /* Adjust the text size */
+}
+    }
+
+    .developer-section  .card {
+            border-radius: 25px; /* Adjust the border radius for mobile */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Adjust shadow for mobile */
+        
+    }
+    .card-title {
+        font-size: 15px; 
+    }
+
+    .box {
+        max-width: 100%; /* Reduce the width for smaller screens */
+        margin: 25px auto; /* Add some margin for spacing */
+        padding: 10px; /* Add padding inside the box */
+        font-size: 12px; /* Optional: Reduce font size */
+    }
+    .proposal-section {
+        border-radius: 20px; /* Adjust the border radius for mobile */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Adjust shadow for mobile */
+    }
+    
+   
+}
