@@ -97,7 +97,7 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
         margin: auto;
         width: 47%;
         border: 4px solid green;
-        padding: 0px;
+        padding: 20px;
 
     .card-title {
     margin:  0%; /* Add space above and below the title */
