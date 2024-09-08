@@ -40,7 +40,12 @@ body {
   margin-bottom: 10px;
 }
 
-
+.descriptions-list li {
+  margin-bottom: 10px;
+}
+.benefits-list li {
+  margin-bottom: 10px;
+}
 
 /* Ensure the image doesn't exceed the slide dimensions */
 .carousel-item img {
