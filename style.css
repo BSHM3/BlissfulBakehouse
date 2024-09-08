@@ -92,7 +92,6 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
 @media (max-width: 600px) {
     .card {
         max-width: 70%; /* Reduce the width for smaller screens */
-        margin: 10%; /* Add some margin for spacing */
         padding: 0px; /* Add padding inside the box */
         margin: auto;
         width: 47%;
