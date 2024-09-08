@@ -3,6 +3,7 @@ $(document).ready(function() {
   $('#product-slider').on('click', '.carousel-item', function() {
     // Get the product details from data attributes
     var productTitle = $(this).data('title');
+    var productDescriptions = $(this).data('descriptions').split(',');
     var productBenefits = $(this).data('benefits').split(',');
     var productIngredients = $(this).data('ingredients').split(',');
 
@@ -12,6 +13,11 @@ $(document).ready(function() {
 
     // Populate the ingredients list
    
+    var descriptionsListHtml = '';
+    productDescriptions.forEach(function(description) {
+      descriptionsListHtml += '<li>' + description.trim() + '</li>';
+    });
+    $('#product-benefits-modal .descriptions-list').html(descriptionsListHtml);
 
     var ingredientsListHtml = '';
     productIngredients.forEach(function(ingredient) {
@@ -25,7 +31,7 @@ $(document).ready(function() {
     });
     $('#product-benefits-modal .benefits-list').html(benefitsListHtml);
 
-    // Show the product benefits modal
+  
     $('#product-benefits-modal').modal('show');
 
     $('#product-slider').carousel('pause');
